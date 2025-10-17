@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apple Psychological Services</title>
+    <!-- Import Tailwind CSS from CDN for quick styling.  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add some basic custom styles for the language toggle -->
+    <style>
+      /* Simple fade-in/out when toggling languages */
+      .hidden { display: none; }
+    </style>
+    <!-- Structured data (JSON‑LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Apple Psychological Services",
+      "url": "https://nemeangames.github.io/apple-psychological-services/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Apple Valley",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "areaServed": "CA",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "sameAs": []
+    }
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Language toggle button in top right -->
+    <nav class="bg-white shadow fixed w-full z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="#home" class="text-xl font-semibold text-indigo-600">Apple Psychological Services</a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="#home" class="navlink px-3 py-2 rounded-md text-sm font-medium">Home</a>
+              <a href="#about" class="navlink px-3 py-2 rounded-md text-sm font-medium">About</a>
+              <a href="#services" class="navlink px-3 py-2 rounded-md text-sm font-medium">Services</a>
+              <a href="#fees" class="navlink px-3 py-2 rounded-md text-sm font-medium">Fees &amp; Insurance</a>
+              <a href="#faq" class="navlink px-3 py-2 rounded-md text-sm font-medium">FAQs</a>
+              <a href="#contact" class="navlink px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            </div>
+          </div>
+          <div>
+            <button id="langToggle" class="px-3 py-2 border rounded-md text-sm font-medium">
+              Español
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page content -->
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section id="home" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4" data-lang="en">Empowering Your Mental Wellness</h1>
+          <h1 class="text-3xl md:text-5xl font-bold mb-4 hidden" data-lang="es">Potenciando Tu Bienestar Mental</h1>
+          <p class="text-lg md:text-xl mb-8" data-lang="en">Personalized therapy for stress, anxiety, depression, relationships and more.</p>
+          <p class="text-lg md:text-xl mb-8 hidden" data-lang="es">Terapia personalizada para estrés, ansiedad, depresión, relaciones y más.</p>
+          <a href="#contact" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md text-lg font-medium">Book a Free Consultation</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-16">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4" data-lang="en">About Me</h2>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4 hidden" data-lang="es">Acerca de Mí</h2>
+          <p class="mb-4" data-lang="en">
+            I’m Krystelina González, a bilingual therapist dedicated to helping adults navigate life’s challenges.
+            With an evidence‑based and compassionate approach, I provide a safe space for healing and growth.
+          </p>
+          <p class="mb-4 hidden" data-lang="es">
+            Soy Krystelina González, una terapeuta bilingüe dedicada a ayudar a los adultos a enfrentar los desafíos de la vida.
+            Con un enfoque compasivo y basado en la evidencia, ofrezco un espacio seguro para sanar y crecer.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-16 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl font-bold mb-8" data-lang="en">Services</h2>
+          <h2 class="text-2xl md:text-3xl font-bold mb-8 hidden" data-lang="es">Servicios</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white shadow rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-2" data-lang="en">Stress Management</h3>
+              <h3 class="text-xl font-semibold mb-2 hidden" data-lang="es">Manejo del Estrés</h3>
+              <p data-lang="en">Learn coping skills and relaxation techniques for a balanced life.</p>
+              <p class="hidden" data-lang="es">Aprende habilidades de afrontamiento y técnicas de relajación para una vida equilibrada.</p>
+            </div>
+            <div class="bg-white shadow rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-2" data-lang="en">Anxiety &amp; Depression</h3>
+              <h3 class="text-xl font-semibold mb-2 hidden" data-lang="es">Ansiedad y Depresión</h3>
+              <p data-lang="en">Explore tools to manage worry, sadness, and improve mood.</p>
+              <p class="hidden" data-lang="es">Explora herramientas para manejar la preocupación, la tristeza y mejorar el estado de ánimo.</p>
+            </div>
+            <div class="bg-white shadow rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-2" data-lang="en">Relationships &amp; Couples</h3>
+              <h3 class="text-xl font-semibold mb-2 hidden" data-lang="es">Relaciones y Parejas</h3>
+              <p data-lang="en">Strengthen communication and build deeper connections with your partner.</p>
+              <p class="hidden" data-lang="es">Fortalece la comunicación y construye conexiones más profundas con tu pareja.</p>
+            </div>
+            <div class="bg-white shadow rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-2" data-lang="en">Trauma &amp; PTSD</h3>
+              <h3 class="text-xl font-semibold mb-2 hidden" data-lang="es">Trauma y TEPT</h3>
+              <p data-lang="en">Heal from past experiences in a supportive and empowering environment.</p>
+              <p class="hidden" data-lang="es">Sana de experiencias pasadas en un entorno de apoyo y empoderamiento.</p>
+            </div>
+            <div class="bg-white shadow rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-2" data-lang="en">ADHD &amp; Life Transitions</h3>
+              <h3 class="text-xl font-semibold mb-2 hidden" data-lang="es">TDAH y Transiciones de Vida</h3>
+              <p data-lang="en">Find strategies for focus, organization, and adapting to change.</p>
+              <p class="hidden" data-lang="es">Encuentra estrategias para la concentración, la organización y la adaptación al cambio.</p>
+            </div>
+            <div class="bg-white shadow rounded-lg p-6">
+              <h3 class="text-xl font-semibold mb-2" data-lang="en">Personal Growth</h3>
+              <h3 class="text-xl font-semibold mb-2 hidden" data-lang="es">Crecimiento Personal</h3>
+              <p data-lang="en">Achieve your goals and discover your strengths with coaching support.</p>
+              <p class="hidden" data-lang="es">Alcanza tus metas y descubre tus fortalezas con apoyo de coaching.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fees & Insurance Section -->
+      <section id="fees" class="py-16">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4" data-lang="en">Fees &amp; Insurance</h2>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4 hidden" data-lang="es">Tarifas y Seguro</h2>
+          <p class="mb-4" data-lang="en">
+            We accept Aetna, Cigna, Blue Shield and provide a sliding scale for self‑pay clients. Telehealth sessions are available.
+          </p>
+          <p class="mb-4 hidden" data-lang="es">
+            Aceptamos Aetna, Cigna, Blue Shield y ofrecemos una escala variable para clientes de pago directo. Las sesiones de telemedicina están disponibles.
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="py-16 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl font-bold mb-8" data-lang="en">Frequently Asked Questions</h2>
+          <h2 class="text-2xl md:text-3xl font-bold mb-8 hidden" data-lang="es">Preguntas Frecuentes</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-semibold" data-lang="en">How do I schedule a session?</h3>
+              <h3 class="font-semibold hidden" data-lang="es">¿Cómo programo una sesión?</h3>
+              <p data-lang="en">Use the contact form below or call us at the number provided. We’ll reach out within 24 hours.</p>
+              <p class="hidden" data-lang="es">Utiliza el formulario de contacto a continuación o llámanos. Te responderemos en 24 horas.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold" data-lang="en">Do you offer telehealth?</h3>
+              <h3 class="font-semibold hidden" data-lang="es">¿Ofrecen telemedicina?</h3>
+              <p data-lang="en">Yes! We provide secure online therapy sessions so you can get care from anywhere in California.</p>
+              <p class="hidden" data-lang="es">¡Sí! Ofrecemos sesiones de terapia en línea para que puedas recibir atención desde cualquier parte de California.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold" data-lang="en">What languages do you speak?</h3>
+              <h3 class="font-semibold hidden" data-lang="es">¿Qué idiomas hablan?</h3>
+              <p data-lang="en">Sessions are offered in English and Spanish. Both languages are fully supported.</p>
+              <p class="hidden" data-lang="es">Las sesiones se ofrecen en inglés y español. Ambos idiomas están totalmente disponibles.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-16">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4" data-lang="en">Contact Us</h2>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4 hidden" data-lang="es">Contáctanos</h2>
+          <p class="mb-6" data-lang="en">Fill out the form below and we’ll get back to you soon.</p>
+          <p class="mb-6 hidden" data-lang="es">Completa el formulario a continuación y nos pondremos en contacto contigo pronto.</p>
+          <form action="#" method="post" class="space-y-4">
+            <div>
+              <label class="block font-medium mb-1" data-lang="en">Name</label>
+              <label class="block font-medium mb-1 hidden" data-lang="es">Nombre</label>
+              <input type="text" name="name" required class="w-full border border-gray-300 p-2 rounded">
+            </div>
+            <div>
+              <label class="block font-medium mb-1" data-lang="en">Email</label>
+              <label class="block font-medium mb-1 hidden" data-lang="es">Correo electrónico</label>
+              <input type="email" name="email" required class="w-full border border-gray-300 p-2 rounded">
+            </div>
+            <div>
+              <label class="block font-medium mb-1" data-lang="en">Message</label>
+              <label class="block font-medium mb-1 hidden" data-lang="es">Mensaje</label>
+              <textarea name="message" rows="4" required class="w-full border border-gray-300 p-2 rounded"></textarea>
+            </div>
+            <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-md">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white py-6 text-center">
+      <p class="text-sm" data-lang="en">&copy; 2025 Apple Psychological Services. All rights reserved.</p>
+      <p class="text-sm hidden" data-lang="es">&copy; 2025 Apple Psychological Services. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Language toggle script -->
+    <script>
+      // Default language: English
+      let currentLang = 'en';
+      const toggleButton = document.getElementById('langToggle');
+      const elements = document.querySelectorAll('[data-lang]');
+
+      function updateLanguage() {
+        elements.forEach(el => {
+          if (el.getAttribute('data-lang') === currentLang) {
+            el.classList.remove('hidden');
+          } else {
+            el.classList.add('hidden');
+          }
+        });
+        toggleButton.textContent = currentLang === 'en' ? 'Español' : 'English';
+      }
+
+      toggleButton.addEventListener('click', () => {
+        currentLang = currentLang === 'en' ? 'es' : 'en';
+        updateLanguage();
+      });
+      // Initial update
+      updateLanguage();
+    </script>
+  </body>
+</html>
